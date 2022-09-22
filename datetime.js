@@ -86,8 +86,17 @@ console.log(curTime.getMilliseconds());
 
 //how to set individual time
 //console.log(curTime.setTime()) // this method can set optionally month and day
-console.log(curTime.setHours(5))
+console.log(curTime.setHours(5)) // here it is returning millisec but when used in browser then will return correct format
 console.log(curTime.setMinutes(5))
 console.log(curTime.setSeconds(5))
 console.log(curTime.setMilliseconds(5))
+
+
+//practice
+
+//for only Date 
+console.log(new Date().toLocaleDateString())
+//for only time
+console.log(new Date().toLocaleTimeString())
+
 
